@@ -1,0 +1,17 @@
+UNITS LENGTH=A TIME=fs ENERGY=kcal/mol
+
+b1: GROUP ATOMS=5
+b2: GROUP ATOMS=95
+cas: GROUP ATOMS=5-100:10
+
+## COMPUTE PHI PSI HERE??
+
+dend: DISTANCE ATOMS=b1,b2
+rg: GYRATION TYPE=RADIUS ATOMS=cas
+
+#The conversion factor is 69.4786 pN = 1 kcal/mol/Angstrom
+
+#e.g. -10 pN to 10 pN
+f: FISST ARG=dend __FILL__
+
+PRINT ARG=* FILE=__FILL__ STRIDE=1000
