@@ -19,5 +19,5 @@ flowchart TB;
   click B "ref2" "A paper describing the FISST paper that is described in this tutorial";
   click C "video1" "A lecture that was given on October 17th 2022 as part of the plumed masterclass series that introduces you to the exercises in this lesson";
   click D "INSTRUCTIONS.md" "Instructions for the exercises that you are supposed to complete";
-  click E "video2" "A lecture that was given on October 24th 2022 as part of the plumed masterclass series that goes through the solutions to the exercises in the lesson";
+  click E "video2" "A lecture that was given on October 24th 2022 as part of the plumed masterclass series that gives background on modelling mechanobiological processes, and then goes through the solutions to the exercises in the lesson";
 ```
