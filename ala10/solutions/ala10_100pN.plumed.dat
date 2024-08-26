@@ -1,0 +1,15 @@
+UNITS LENGTH=A TIME=fs ENERGY=kcal/mol
+
+b1: GROUP ATOMS=5
+b2: GROUP ATOMS=95
+cas: GROUP ATOMS=5-100:10
+
+dend: DISTANCE ATOMS=b1,b2
+rg: GYRATION TYPE=RADIUS ATOMS=cas
+
+#The conversion factor is 69.4786 pN = 1 kcal/mol/Angstrom
+
+#-10 pN to 10 pN
+f: FISST MIN_FORCE=-0.144 MAX_FORCE=1.44 PERIOD=200 NINTERPOLATE=31 ARG=dend OUT_RESTART=prod/ala10_pull_fRange_fmin-10_fmax100.restart.txt OUT_OBSERVABLE=prod/ala10_pull_fRange_fmin-10_fmax100.observable.txt OBSERVABLE_FREQ=1000 CENTER=0 RESTART_FMT=%e 
+
+PRINT ARG=dend,rg,f.dend_fbar,f.bias,f.force2 FILE=prod/ala10_pull_fRange_fmin-10_fmax100.colvar.txt STRIDE=1000

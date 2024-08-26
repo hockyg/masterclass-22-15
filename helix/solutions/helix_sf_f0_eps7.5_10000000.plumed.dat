@@ -1,0 +1,20 @@
+#UNITS LENGTH=A TIME=fs ENERGY=kcal/mol
+
+b1: GROUP ATOMS=1
+b2: GROUP ATOMS=12
+cas: GROUP ATOMS=1-12
+
+dend: DISTANCE ATOMS=b1,b2
+rg: GYRATION TYPE=RADIUS ATOMS=cas
+ENERGY LABEL=en
+
+#The conversion factor is 69.4786 pN = 1 kcal/mol/Angstrom
+#100pN = 1.4425 kcal/mol/A
+p: RESTRAINT ...
+    ARG=dend
+    AT=0
+    SLOPE=0.0
+    KAPPA=0
+... p:
+
+PRINT ARG=dend,en,p.bias,p.force2 STRIDE=1000 FILE=helix_sf_f0.0_eps7.5_10000000.en.colvars.dat FMT=%8.4f

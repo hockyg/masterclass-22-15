@@ -121,11 +121,12 @@ The module writes out both the force weights and the observable weights to files
 
 The exercises are presented below.
 
-### Effect of force on a 1-dimensional potential
+### Effect of force on a 2-dimensional potential
 
-Use the RESTRAINT function to add a constant force of different magnitudes (e.g. -5 to 5 in these units) and look at how the force changes the resulting free energy surface.
+Use the RESTRAINT function to add a constant force of different magnitudes (e.g. -2.5 to 2.5 in these units) and look at how the force changes the resulting free energy surface.
 
 ```plumed
+#SOLUTIONFILE=work/plumed_ex1.dat
 UNITS ENERGY=kcal/mol
 
 d1: DISTANCE ATOMS=1,2
@@ -174,6 +175,7 @@ If you have time, use RESTRAINT to add a constant force in the Y direction that 
 Now add FISST in order to sample forces all at once:
 
 ```plumed
+#SOLUTIONFILE=work/plumed_ex2.dat
 f: FISST MIN_FORCE=-15 MAX_FORCE=15.0 PERIOD=200 NINTERPOLATE=41 ARG=d1.x KBT=1.0 OUT_RESTART=__FILL__ OUT_OBSERVABLE=__FILL__ OBSERVABLE_FREQ=100 CENTER=0
 ```
 

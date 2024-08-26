@@ -1,0 +1,7 @@
+d1: DISTANCE ATOMS=1,2 COMPONENTS
+ff: MATHEVAL ARG=d1.x,d1.y PERIODIC=NO FUNC=-8*log((exp(-(y-exp(-x))^2/2)+exp(-(y+exp(-x))^2/2))*exp(-x^2/2))
+bb: BIASVALUE ARG=ff
+
+f: FISST MIN_FORCE=-15 MAX_FORCE=15.0 PERIOD=200 NINTERPOLATE=41 ARG=d1.x KBT=1.0 OUT_RESTART=v-shape_fisst-15_15_scale8_seed1.restart.txt OUT_OBSERVABLE=v-shape_fisst-15_15_scale8_seed1.observable.txt OBSERVABLE_FREQ=100 CENTER=0
+
+PRINT ARG=d1.x,d1.y,bb.bias,f.d1.x_fbar,f.bias,f.force2 FILE=v-shape_fisst-15_15_scale8_seed1.colvar.txt STRIDE=100
