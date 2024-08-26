@@ -9,6 +9,8 @@ The flow chart shown below indicates the order in which you should consult the r
 
 This lesson was the fifteenth masterclass in the 2022 series.
 
+Solutions are available from ![This page](https://github.com/hockyg/masterclass-22-15)
+
 ```mermaid
 flowchart TB;
   A[syntax] -.-> C[Lecture I];
