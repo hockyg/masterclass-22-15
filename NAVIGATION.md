@@ -12,12 +12,14 @@ This lesson was the fifteenth masterclass in the 2022 series.
 ```mermaid
 flowchart TB;
   A[syntax] -.-> C[Lecture I];
-  B[paper] -.-> C;
+  B[paper1] -.-> C;
   C ==> D[instructions];
   D ==> E[Lecture II];
+  E ==> F[paper2];
   click A "ref1" "A previous tutorial that introduces the basics of PLUMED syntax";
-  click B "ref2" "A paper describing the FISST paper that is described in this tutorial";
+  click B "paper1" "A paper describing the FISST method that is used in this tutorial";
   click C "video1" "A lecture that was given on October 17th 2022 as part of the plumed masterclass series that introduces you to the exercises in this lesson";
   click D "INSTRUCTIONS.md" "Instructions for the exercises that you are supposed to complete";
   click E "video2" "A lecture that was given on October 24th 2022 as part of the plumed masterclass series that gives background on modelling mechanobiological processes, and then goes through the solutions to the exercises in the lesson";
+  click F "paper2" "A follow up paper combining FISST with replica exchange";
 ```
