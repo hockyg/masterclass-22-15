@@ -1,6 +1,6 @@
 # Computing the effect of mechanical force in PLUMED
 
-### This repository contains files for the plumed masterclass presented on October 17, 2022. I
+### This repository contains files for the plumed masterclass presented on October 17, 2022.
 
 It covers the effect of mechanical forces and the `fisst` module.
 
