@@ -9,7 +9,9 @@ The flow chart shown below indicates the order in which you should consult the r
 
 This lesson was the fifteenth masterclass in the 2022 series.
 
-Solutions are available from ![This page](https://github.com/hockyg/masterclass-22-15)
+Solutions are available from [This page](https://github.com/hockyg/masterclass-22-15)
+
+Some relevant perspective articles to consider are [this one](https://doi.org/10.1021/acs.jpcb.1c06330) from Hocky and [this one](https://doi.org/10.1021/acs.jpcb.1c10715) from Stirnemann.
 
 ```mermaid
 flowchart TB;
