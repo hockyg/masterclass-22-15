@@ -93,7 +93,7 @@ $$
 
 ## FISST
 
-Infinite Switch Simulated Tempering in Force (FISST) is a method implemented  in [this paper](https://arxiv.org/abs/1910.14064) 
+Infinite Switch Simulated Tempering in Force (FISST) is a method implemented  in [this paper](https://doi.org/10.1063/5.0009280) and demonstrated to be compatible with replica exchange approaches in [this paper](https://doi.org/10.1021/acs.jpcb.3c07081)
 
 This method takes advantage of the limit of changing a force from $F_{min}$ to $F_{max}$ and back infinitely quickly.
 

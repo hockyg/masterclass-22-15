@@ -10,3 +10,6 @@ ref1:
 ref2:
   location: https://dx.doi.org/10.1063/5.0009280
   type: external
+ref3:
+  location: https://doi.org/10.1021/acs.jpcb.3c07081
+  type: external
