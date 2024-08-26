@@ -1,6 +1,14 @@
 # Computing the effect of mechanical force in PLUMED
 
-### This repository contains files for the plumed masterclass presented on October 17, on the effect of mechanical forces and the `fisst` module.
+### This repository contains files for the plumed masterclass presented on October 17, 2022. I
+
+It covers the effect of mechanical forces and the `fisst` module.
+
+Masterclass videos were presented by Glen Hocky and Guillaume Stirnemann
+
+FISST video (Hocky): https://www.youtube.com/live/1GSKhM57lo0?si=Fetb-LabeqlweNHU
+
+Modeling of mechanobiological processes (Stirnemann): https://www.youtube.com/live/JjpKSzb9kJM?si=9zwW6_gW1siFZ9yJ
 
 There are four systems:
 
