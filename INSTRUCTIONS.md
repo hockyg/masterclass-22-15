@@ -161,7 +161,7 @@ d1: DISTANCE ATOMS=1,2 COMPONENTS
 ff: MATHEVAL ARG=d1.x,d1.y PERIODIC=NO FUNC=-8*log((exp(-(y-exp(-x))^2/2)+exp(-(y+exp(-x))^2/2))*exp(-x^2/2))
 bb: BIASVALUE ARG=ff
 
-PRINT ARG=* FILE=__FILL__ STRIDE=100
+PRINT ARG=* FILE=COLVARS.dat STRIDE=100
 ```
 
 First run a simulation using the command, and make a 2d histogram of x and y to show that it is trapped on one side. 
